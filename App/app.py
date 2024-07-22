@@ -6,7 +6,7 @@ import ssl
 
 import pymysql
 pymysql.install_as_MySQLdb()
-
+# where is the error?
 from flask import Flask, flash, redirect, render_template, request, session, url_for
 from models import kasithreads_db
 import bcrypt
