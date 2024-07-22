@@ -1,0 +1,20 @@
+textarea{
+    width: 50%;
+    height: 20vh;
+}
+
+button{
+    height: 30px;
+    width: 80px;
+    font-size: 15px;
+    color: white;
+    background-color: blueviolet;
+}
+
+@media (max-width: 550px) {
+    botton{
+        height: 60px;
+        width: 100px;
+        font-size: 20px;
+    }
+}

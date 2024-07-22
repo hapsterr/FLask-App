@@ -1,0 +1,491 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.home_photos{
+    height: 660px;
+    display: flex;
+    flex-direction: row;
+    margin: 0px 1%;
+}
+.home_photos h2{
+    font-family: "Sedan SC", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 25px;
+    cursor: default;
+    color: white;
+    padding-top: 7vh;
+    padding-left: 4%;
+}
+.home_photos h4{
+    font-family: "Sedan SC", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 20px;
+    cursor: default;
+    color: white;
+    padding-left: 4%;
+    padding-top: 30px;
+    z-index: 10;
+}
+.home_photos button{
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 30px;
+    cursor: pointer;
+}
+.home_photos .firstphoto button{
+    position: relative;
+    top: 20vh;
+    left: 60%;
+
+}
+.home_photos .firstphoto h3{
+    font-size: 45px;
+    color: white;
+    padding-left: 5%;
+    padding-top: 0px;
+    position: relative;
+    top: 50px;
+}
+.home_photos .firstphoto{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 630px;
+    width: 55%;
+    position: relative;
+    top: 10px;
+}
+#secondthird{
+    height: 630px;
+    width: 44%;
+    position: relative;
+    left: 1%;
+    
+}
+
+#secondthird button{
+    position: relative;
+    left: 10px;
+}
+.secondphoto{
+    background-size: cover;
+    height: 310px;
+    position: relative;
+    bottom: 10px;
+}
+
+.thirdphoto{
+    background-size: cover;
+    height: 310px;
+    position: relative;
+    bottom: 23px;
+}
+
+.brand img{
+    height: 190px;
+    width: 200px;
+}
+.suggestions h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+}
+.suggestions{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+}
+
+form label{
+    font-size: 20px;
+}
+.suggestions form button{
+    font-size: 25px;
+    height: 40px;
+    border: none;
+    background-color: blue;
+    color: white;
+}
+
+form textarea{
+    position: relative;
+    top: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 0px;
+    border: 2px solid black;
+}
+.suggestions form input{
+    height: 20px;
+    border: 2px solid black;
+}
+
+.featured_brands{
+    text-align: center;
+    margin-bottom: 1%;
+    width: 100%;
+   
+}
+.featured_brands a{
+    gap: 0px;
+}
+.featured_brands a:hover{
+    transform: scale(1.05);
+}
+.featured_brands h2{
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+}
+.paxiBurner{
+    background-color: purple;
+    padding-top: 20px;
+    padding-left: 4%;
+    color: white;
+    height: 90px;
+}
+.burner_photo{
+    height: 60px;
+    width: 130px;
+}
+.paxiBurner h3{
+    position: relative;
+    left: 150px;
+    bottom: 94px;
+    font-size: 30px;
+}
+.paxiBurner h2{
+    position: relative;
+    left: 150px;
+    bottom: 120px;
+    font-size: 20px;
+}
+.paxiBurner h2 a{
+    text-decoration: none;
+    color: rgb(13, 13, 78);
+}
+.homeproducts{
+    text-align: center;
+    height: 480px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    
+}
+.homeproducts h2{
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+}
+.homeproducts span{
+    text-decoration: none;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: gray;
+}
+.homeproducts h3{
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    color: gray;
+    font-style: normal;
+    font-size: 15px;
+}
+.homeproducts img{
+    border-radius: 25px;
+    transition-duration: 0.2s;
+}
+.homeproducts img:hover{
+    transform: scale(1.05);
+}
+.homeproducts a{
+    text-decoration: none;
+    height: 300px;
+    width: 450px;
+    
+}
+.homeproducts a h3{
+    color: black;
+    font-size:15px ;
+    font-weight: 400;
+    position: relative;
+    bottom: 10px;
+}
+.homeproducts a p{
+    color: black;
+    font-size:20px ;
+    font-weight: 400;
+    position: relative;
+    bottom: 20px;
+}
+.homeproducts div{
+    display: flex;
+    flex-direction: row; 
+    gap: 10px;
+    overflow-x: hidden;
+    margin: 0px 5px;
+}
+.featured_brands div{
+    display: flex;
+    flex-direction: row; 
+    gap: 5%;
+    overflow-x: hidden;
+ }
+.scroll-btn{
+    border: none;
+    background-color: white;
+    font-size: 50px;
+}
+.scroll-btn.next{
+    margin-right: -10px;
+}
+.scroll-btn.prev{
+    border: none;
+    background-color: white;
+    margin-left: -5px;
+}
+.scroll-content{
+    overflow-y: hidden;
+    height: 350px;
+    margin: 0px -50px;
+}
+.scroll-brands{
+    overflow-y: hidden;
+    height: auto;
+    margin: 0px -20px;
+}
+
+@media (max-width: 970px){
+    .suggestions{
+        height: 160px;
+    }
+
+    .suggestions form{
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+    .suggestions form .name-input{
+        width: 42%;
+        position: relative;
+        bottom: 10px;
+        left: 5.5%;
+       
+    }
+    
+    .suggestions form .email-input{
+        width: 45.5%;
+        position: relative;
+        left: 50.5%;
+        bottom: 36px;
+    }
+    
+    .suggestions form textarea{
+        width: 90.5%;
+        position: relative;
+        left: 5.5%;
+        bottom: 100px;
+        margin-top: -40px;
+    }
+   
+    .suggestions form button{
+        width: 91.3%;
+        position: relative;
+        left: 5.5%;
+        margin-top: 15px;
+    }
+}
+@media (max-width: 745px){
+    .suggestions{
+        height: 190px;
+    }
+    .suggestions form button{
+        width: 91.4%;
+    }
+}
+
+@media (max-width: 450px){
+    .suggestions form button{
+        width: 92.5%;
+        height: 30px;
+    }
+    .suggestions form textarea{
+        width: 90.8%;
+       
+    }
+}
+
+@media (max-width: 740px){
+    
+    .home_photos .firstphoto button{
+        position: relative;
+        left: 50%;
+    
+    }
+
+    .burner_photo{
+        height: 40px;
+        width: 100px;
+        position: relative;
+        bottom: 10px;
+    }
+    .paxiBurner{
+        background-color: purple;
+        padding-top: 20px;
+        padding-left: 3px;
+        color: white;
+        height: 40px;
+    }
+
+    .paxiBurner h3{
+        position: relative;
+        left: 100px;
+        bottom: 80px;
+        font-size: 25px;
+    }
+    .paxiBurner h2{
+        position: relative;
+        left: 100px;
+        bottom: 110px;
+        font-size: 15px;
+    }
+}
+@media (max-width: 600px){
+    .thirdphoto{
+        position: relative;
+        bottom: 10px;
+        margin-right: 4px;
+    }
+    #secondthird{
+        display: flex;
+        flex-direction: row;
+        height: 630px;
+        width:100%;
+        position: relative;
+        top: 30px;
+        gap: 7px;
+        margin-right: 5%;
+        
+    }
+    .home_photos{
+        height: 660px;
+        display: flex;
+        flex-direction: column;
+        margin: 0px 1%;
+        
+    }
+    .home_photos .firstphoto{
+        height: 600px;
+        width: 100%;
+    }
+    #secondthird button{
+       font-size: 20px;
+       position: relative;
+       left: 105px;
+       
+    }
+    
+    .home_photos .firstphoto button{
+        font-size: 20px;
+        position: inherit;
+        margin-left: 330px;
+    
+    }
+
+    .paxiBurner h3{
+        font-size: 20px;
+        position: relative;
+        bottom: 70px;
+        
+    }
+    .paxiBurner h2{
+        font-size: 15px;
+        position: relative;
+        bottom: 90px;
+    }
+}
+@media (max-width: 460px){
+    #secondthird{
+        height: 430px;
+        
+    }
+
+    .secondphoto{
+        height: 250px;
+    }
+    .thirdphoto{
+        height: 250px;
+    }
+    
+    #secondthird button{
+        font-size: 20px;
+        position: relative;
+        bottom: 60px;
+        left: 75px;
+        
+    }
+    .home_photos .firstphoto button{
+        font-size: 20px;
+        position: inherit;
+        margin-left: 290px;
+    
+    }
+    .paxiBurner h3{
+        font-size: 18px;
+        margin-right: 2%;
+    }
+    .paxiBurner h2{
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width: 430px){
+    .home_photos .firstphoto button{
+        font-size: 20px;
+        position: inherit;
+        margin-left: 230px;
+    
+    }
+    .burner_photo{
+        height: 20px;
+        width: 56px;
+        position: relative;
+        bottom: 8px;
+    }
+    .paxiBurner{
+        background-color: purple;
+        padding-top: 20px;
+        padding-left: 3px;
+        color: white;
+        height: 30px;
+    }
+
+    .paxiBurner h3{
+        position: relative;
+        left: 60px;
+        bottom: 50px;
+        font-size: 15px;
+    }
+    .paxiBurner h2{
+        position: relative;
+        left: 60px;
+        bottom: 65px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 400px){
+    #secondthird button{
+        font-size: 20px;
+        position: relative;
+        left: 45px;
+        
+    }
+}
