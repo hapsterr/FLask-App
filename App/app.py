@@ -31,15 +31,18 @@ app.secret_key = 'jhgf7938r97b4-2w2883e2132./,,;d,fdeg'
 @app.route('/website_home')
 @app.route('/')
 def website_home():
-    cursor = db.connection.cursor()
-    cursor.execute("SELECT * FROM brandlogo")
-    brands = cursor.fetchall()
-    cursor.execute("SELECT * FROM products ORDER BY id LIMIT 10")
-    products = cursor.fetchall()
-    cursor.execute("SELECT * FROM homephotos ORDER BY id DESC Limit 1")
-    cheap = cursor.fetchone()
-    cursor.close()
-    return render_template('website/home.html', brands =brands, products =products, cheap=cheap)
+    try:
+        with db.connection.cursor() as cursor:
+            cursor.execute("SELECT * FROM brandlogo")
+            brands = cursor.fetchall()
+            cursor.execute("SELECT * FROM products ORDER BY id LIMIT 10")
+            products = cursor.fetchall()
+            cursor.execute("SELECT * FROM homephotos ORDER BY id DESC Limit 1")
+            cheap = cursor.fetchone()
+        return render_template('website/home.html', brands=brands, products=products, cheap=cheap)
+    except Exception as e:
+        app.logger.error(f'Error in /website_home: {e}')
+        return "An error occurred, please try again later.", 500
 
 @app.route('/newestbrands')
 def newestbrands():
