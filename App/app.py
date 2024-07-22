@@ -4,6 +4,9 @@ import re
 import smtplib
 import ssl
 
+import pymysql
+pymysql.install_as_MySQLdb()
+
 from flask import Flask, flash, redirect, render_template, request, session, url_for
 from models import kasithreads_db
 import bcrypt
